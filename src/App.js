@@ -1,23 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-
+import CustomSelect from './components/CustomSelect';
 function App() {
+  const selectOptions = ["Businessman", "Employee", "Freelancer", "Retired"];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen flex justify-center pt-20 bg-[#e0e1e1]">
+      <CustomSelect selectOptions={selectOptions} />
     </div>
   );
 }
